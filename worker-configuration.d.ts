@@ -3,4 +3,5 @@ interface Env {
   OPENAI_API_KEY: string;
   GROQ_API_KEY: string;
   OPEN_ROUTER_API_KEY: string;
+  GEMINI_API_KEY: string;
 }

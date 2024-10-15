@@ -16,7 +16,9 @@ export function getAPIKey(cloudflareEnv: Env, provider: string) {
       return env.GROQ_API_KEY || cloudflareEnv.GROQ_API_KEY;
     case 'OpenRouter':
       return env.OPEN_ROUTER_API_KEY || cloudflareEnv.OPEN_ROUTER_API_KEY;
+    case 'GoogleStudio':
+      return env.GEMINI_API_KEY || cloudflareEnv.GEMINI_API_KEY;
     default:
-      return "";
+      return '';
   }
 }
